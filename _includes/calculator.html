@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="row text-center">
       <div class="jumbotron">
-        <h1>Living Wage Calculator</h1>
-        <p class="lead">Are you paying your domestic worker enough?</p>
+        <h1>Calculadora de salário digno</h1>
+        <p class="lead">Você está pagando o suficiente à sua empregada doméstica?</p>
         <p class="small"><a href="{{ site.url }}" target="_blank">Read more about domestic worker wages <i class="fa fa-external-link-alt"></i></a></p>
       </div>
     </div>
@@ -17,7 +17,7 @@
   
           <form id="input-form" role="form">
             <div class="form-group">
-              <label class="control-label lead question" for="pay-amount-day">How much do you pay your household worker?</label><br>
+              <label class="control-label lead question" for="pay-amount-day">Quanto você paga para sua empregada doméstica?</label><br>
               <div class="row">
                 <div class="col-sm-9">
                   <input
@@ -78,14 +78,14 @@
           <div class="row">
             <div class="col-sm-12">
               <p class="lead">
-                At this rate, you are paying the equivalent of <strong><span id="output-amount">KSH0</span></strong> per month.
+               Com esta taxa, você está pagando o equivalente a <strong><span id="output-amount">MZN</span></strong> por mês.
               </p>
             </div>
           </div>
   
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-              <button id="go-button" class="btn btn-primary btn-block btn-lg display-landing"><i class="fa fa-calculator"></i>Calculate expenses</button>
+              <button id="go-button" class="btn btn-primary btn-block btn-lg display-landing"><i class="fa fa-calculator"></i>Calcular despesas</button>
             </div>
           </div>
   
@@ -104,7 +104,7 @@
         <div class="section" id="results">
   
           <p class="lead">
-            This covers <span id="output-percentage" class="label">0%</span> of your domestic worker's contribution to their household's minimal need of <strong><span id="output-monthly-need">KSH0</span></strong>.
+            This covers <span id="output-percentage" class="label">0%</span> Isto cobre da contribuição do seu trabalhador doméstico para as necessidades mínimas do seu agregado familiar de <strong><span id="output-monthly-need">KSH0</span></strong>.
           </p>
 
 
@@ -135,7 +135,7 @@
   
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-              <button id="show-assumptions-btn" class="btn btn-primary btn-block btn-lg display-results"><i class="fa fa-arrow-circle-down"></i> Show assumptions</button>
+              <button id="show-assumptions-btn" class="btn btn-primary btn-block btn-lg display-results"><i class="fa fa-arrow-circle-down"></i> Mostrar suposicoes</button>
             </div>
           </div>
   
@@ -153,13 +153,13 @@
   
                 <div class="col-sm-3 text-center">
   
-              <h2>Assumptions</h2>
+              <h2>Suposicoes</h2>
   
             </div>
   
             <div class="col-sm-9 text-center">
   
-              <p>Our calculations are based on <strong style="display: inline-block;">9 assumptions</strong>.</p>
+              <p>Nossos calculos sao baseados em: <strong style="display: inline-block;">9 suposicoes</strong>.</p>
   
             </div>
   
@@ -174,7 +174,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-household-size">
               <h4 class="panel-title">
                 <span>
-                  1. Household Size <span id="household-size-feedback" class="pull-right">... people</span>
+                  1. Tamanho da família <span id="household-size-feedback" class="pull-right">... pessoas</span>
                 </span>
               </h4>
             </div>
@@ -186,7 +186,7 @@
                   <div class="col-sm-9">
   
                     <div class="form-group">
-                      <label for="household-size" class="lead question">Including your domestic worker, <strong>how large is their household</strong>?</label><br>
+                      <label for="household-size" class="lead question">Incluindo o seu trabalhador doméstico, <strong> qual é o tamanho do seu agregado familiar</strong>?</label><br>
                       <input
                           id="household-size"
                           class="slider"
@@ -211,10 +211,10 @@
                   </div>
   
                 <p class="note">
-                  Domestic workers are often consulted for important decisions within the family with 60% of them providing financial assistance for their households.
+                  Os trabalhadores domésticos são frequentemente consultados para decisões importantes no seio da família, sendo que deles prestam assistência financeira aos seus agregados familiares.
                 </p>
                 <p class="sources">
-                  <strong>Source:</strong> <a href="http://www.kudheiha.org/domestic-workers/">Domestic Workers</a>
+                  <strong>Source:</strong> <a href="http://www.kudheiha.org/domestic-workers/">Trabalhos domesticos</a>
                 </p>
               </div>
             </div>
@@ -230,7 +230,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-food-expenses">
               <h4 class="panel-title">
                 <span>
-                  2. Food Cost <span id="food-total" class="pull-right">KSH...</span>
+                  2. Custo dos Alimentos <span id="food-total" class="pull-right">KSH...</span>
                 </span>
               </h4>
             </div>
@@ -242,7 +242,7 @@
                                   <div class="col-sm-9">
   
                                           <div class="form-group">
-                              <label for="food-cost" class="lead question">What do you estimate are the daily <strong>food costs</strong> per person in your domestic worker's household?</label><br>
+                              <label for="food-cost" class="lead question">Qual você estima serem os <strong>custos diários de alimentação</strong> por pessoa na casa do seu trabalhador doméstico?</label><br>
                               
                               <input
                                   id="food-cost"
@@ -255,7 +255,7 @@
                                   data-slider-step="10"
                                   value="180"
                                   data-slider-value="180"
-                                  data-slider-formater="KSH"/><br>
+                                  data-slider-formater="MZN"/><br>
   
                             </div>
   
@@ -269,9 +269,9 @@
                               </div>            	
   
                 
-                <p class="note">Using consumer price index data on food (January 2019) and a selected basket of goods, <strong>we estimate that the daily average cost per person for attaining 2000 calories is Ksh 180</strong> (KSH 5,400 per month per person).</p>
+                <p class="note">Utilizando dados do índice de preços ao consumidor de alimentos (janeiro de 2019) e uma cesta de bens selecionada, <strong>estimamos que o custo médio diário por pessoa para atingir 2.000 calorias é de 180 MZN</strong> (5.400 MZN por mês por pessoa)..</p>
                 <p class="note">
-                  We have not incorporated the food nutrition program or child support grants in our assessment. We feel our values are still quite conservative.
+                  Não incorporamos o programa de nutrição alimentar ou subsídios de apoio à criança na nossa avaliação. Sentimos que nossos valores ainda são bastante conservadores..
                 </p>
                 <p class="sources">
                   <strong>Source:</strong> <a href="https://openafrica.net/dataset/cpi_kenya_2018">CPI January 2019, KNBS</a>
@@ -290,7 +290,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-transport-expenses">
               <h4 class="panel-title">
                 <span>
-                  3. Transportation Cost <span id="transport-total" class="pull-right">KSH...</span>
+                  3. Custo de Transporte <span id="transport-total" class="pull-right">MZN...</span>
                 </span>
               </h4>
             </div>
@@ -302,7 +302,7 @@
                                   <div class="col-sm-9">
   
                                           <div class="form-group">
-                              <label for="transport-cost" class="lead question">How much does it cost your domestic worker to <strong>get to work</strong>?</label><br>
+                              <label for="transport-cost" class="lead question">Quanto custa para o seu trabalhador doméstico <strong>chegar ao trabalho</strong>?</label><br>
                               <input
                                   id="transport-cost"
                                   class="slider"
@@ -314,13 +314,13 @@
                                   data-slider-step="5"
                                   value="50"
                                   data-slider-value="50"
-                                  data-slider-formater="KSH"/><br>
+                                  data-slider-formater="MZN"/><br>
                             </div>
                             <div class="form-group">
-                              <label for="transport-direction" class="lead question">Is this cost <strong>one way</strong> or for a <strong>roundtrip</strong>?</label><br>
+                              <label for="transport-direction" class="lead question">Esse custo é <strong>unidirecional </strong> ou <strong>ida e volta</strong>?</label><br>
                               <select class="selectpicker" name="transport-direction" id ="transport-direction"><br>
-                                <option value="oneway" selected>one way</option>
-                                <option value="roundtrip">round trip</option>
+                                <option value="oneway" selected>unidirecional</option>
+                                <option value="roundtrip">ida e volta</option>
                               </select>
                             </div>							    
   
@@ -333,15 +333,14 @@
   
                               </div>
   
-                <p class="note">Travel costs are known to be high for domestic workers. <strong>We assume a need of KSH50 one way to get to work</strong>, based on the Consumer Price Indices and Inflation Rates for January 2019
+                <p class="note">Os custos de viagem são conhecidos por serem elevados para os trabalhadores domésticos. <strong> Assumimos uma necessidade de 50MZN para chegar ao trabalho </strong>, com base nos Índices de Preços ao Consumidor e Taxas de Inflação de janeiro de 2019.
                 </p>
                 <p class="note">
-                  We assume the cost of getting from Kawangware to a Nairobi suburb as the base. It is true it can take up to two minibus taxi trips to leave home and arrive at work. These trips combined cost between KSH30-50. Daily this can then be KSH60-100.
+                 Assumimos o custo de ir de Baixa da Cidade de Maputo a um subúrbio de Maputo como base.  É verdade que podem ser necessárias até duas viagens de micro-ônibus para sair de casa e chegar ao trabalho. Essas viagens custaram entre KSH30-50. Diariamente, isso pode ser 20-50 MZN.
                 </p>
                 <p class="note">
-                  Transportation is not cheap in Nairobi (public or private) and this is likely true through Kenya.
-                  Of course if the tariff or the number of trips from poorer areas to urban employer centres were lower
-                  then the cost would be lower. But it can also be higher depending on the distance.
+                 O transporte não é barato em Mocambique (público ou privado) e isso provavelmente é verdade em Maputo.
+                   É claro que se a tarifa ou o número de viagens das áreas mais pobres para os centros empregadores urbanos fossem mais baixos, o custo seria menor. Mas também pode ser maior dependendo da distância.
                 </p>
   
               </div>
@@ -358,7 +357,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-rent-expenses">
               <h4 class="panel-title">
                 <span>
-                  4. Housing Cost <span id="rent-total" class="pull-right">R...</span>
+                  4. Custo de habitação <span id="rent-total" class="pull-right">R...</span>
                 </span>
               </h4>
             </div>
@@ -370,7 +369,7 @@
                                   <div class="col-sm-9">
   
                                           <div class="form-group">
-                              <label for="rent-cost" class="lead question">How much do you estimate are your domestic worker's <strong>rent and utility costs</strong> (including electricity)?</label><br>
+                              <label for="rent-cost" class="lead question">Quanto você estima que sejam (incluindo eletricidade) do seu trabalhador doméstico?<strong> o aluguel e os custos de serviços públicos</strong> (incluindo a eletrecidade)?</label><br>
                               <input
                                   id="rent-cost"
                                   class="slider"
@@ -382,7 +381,7 @@
                                   data-slider-step="50"
                                   value="4500"
                                   data-slider-value="4500"
-                                  data-slider-formater="KSH"/><br>
+                                  data-slider-formater="MZN"/><br>
                             </div>
   
                                     </div>
@@ -395,13 +394,14 @@
                               </div>            	
   
                 <p class="note">
-                  Generally speaking, higher rents are associated with better provision of sanitation services and lower crime rates.
+                  
+De um modo geral, as rendas mais elevadas estão associadas a uma melhor prestação de serviços de saneamento e a taxas de criminalidade mais baixas.
                 </p>
                 <p class="note">
-                  Associations with violence and sanitation taken from this data as well. Where rent was not paid (or reported), the assumption was that the household lived in informal risky settings. We don't want to highlight that as a residential option.
+                 Associações com violência e saneamento também foram extraídas destes dados. Nos casos em que a renda não era paga (ou comunicada), presumia-se que o agregado familiar vivia em ambientes informais de risco. Não queremos destacar isso como uma opção residencial.
                 </p>
                 <p class="sources">
-                  <strong>Source:</strong> <a href="https://openafrica.net/dataset/cpi_kenya_2018">CPI January 2019, KNBS</a>
+                  <strong>Source:</strong> <a href="https://openafrica.net/dataset/cpi_kenya_2018">CPI Janeiro 2019, MOZ</a>
                 </p>
               </div>
             </div>
@@ -417,7 +417,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-health-expenses">
               <h4 class="panel-title">
                 <span>
-                  5. Healthcare Cost <span id="health-total" class="pull-right">KSH...</span>
+                  5. Custo de saúde<span id="health-total" class="pull-right">MZN...</span>
                 </span>
               </h4>
             </div>
@@ -429,8 +429,9 @@
                                   <div class="col-sm-9">
   
                             <div class="form-group">
-                              <label for="rent-cost" class="lead question">What is a reasonable monthly allowance for <strong>healthcare</strong> needs?</label><br>
-                              <p>Estimate a reasonable monthly health allowance (per person):</p>
+                              <label for="rent-cost" class="lead question">O que é um subsídio mensal razoável para necessidades<strong>healthcare</strong> de saúde?</label><br>
+                              <p>
+ Estime um subsídio de saúde mensal razoável(por pessoa):</p>
                               <input
                                   id="health-cost"
                                   class="slider"
@@ -442,7 +443,7 @@
                                   data-slider-step="50"
                                   value="550"
                                   data-slider-value="550"
-                                  data-slider-formater="KSH"/><br>
+                                  data-slider-formater="MZN"/><br>
                             </div>
   
                                     </div>
@@ -455,10 +456,10 @@
                               </div>
   
                 <p class="note">
-                  Setting up a health budget for the household is very important. <strong>Public consultancies cost KSH550 per visit and for medicines.</strong> Healthcare costs could also be covered through health insurance which can cost at least KSH 150 per month per person.
+                 Estabelecer um orçamento de saúde para o agregado familiar é muito importante.<strong> As consultas públicas custam KSH550 por visita e por medicamentos.</strong> Os custos de saúde também podem ser cobertos através de seguro de saúde, que pode custar pelo menos 250 MZN por mês, por pessoa.
                 </p>
                 <p class="sources">
-                    <strong>Sources:</strong> <br>
+                    <strong>Fontes:</strong> <br>
                     <a href="https://www.who.int/choice/country/ken/cost/en/" target="_blank">Choosing Interventions that are Cost Effective (WHO-CHOICE)</a><br>
                     <a href="https://calculator.co.ke/nhif-contribution-rates" target="_blank">NHIF Contribution Rates</a>
                 </p>
@@ -476,7 +477,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-education-expenses">
               <h4 class="panel-title">
                 <span>
-                  6. Education Cost<span id="education-total" class="pull-right">R...</span>
+                  6. Custo da educação<span id="education-total" class="pull-right">R...</span>
                 </span>
               </h4>
             </div>
@@ -488,8 +489,8 @@
                                   <div class="col-sm-9">
   
                                           <div class="form-group">
-                              <label for="education-cost" class="lead question">What much do you estimate your domestic worker spends on <strong>sending kids to school</strong>?</label>
-                              <p>Estimate the cost per school aged child: </p>
+                              <label for="education-cost" class="lead question">Quanto você estima que sua empregada doméstica gaste para mandar os filhos para a escola?</strong>?</label>
+                              <p>Estime o custo por criança em idade escolar: </p>
                               <input
                                   id="education-cost"
                                   class="slider"
@@ -501,10 +502,10 @@
                                   data-slider-step="100"
                                   value="2400"
                                   data-slider-value="2400"
-                                  data-slider-formater="KSH"/><br>
+                                  data-slider-formater="MZN"/><br>
                               </div>
                               <div class="form-group">
-                              <label for="education-cost" class="lead question">How many school-aged children are there in the household?</label>
+                              <label for="education-cost" class="lead question">Quantas crianças em idade escolar há no agregado familiar?</label>
                               
                               <input
                                   id="education-kids"
@@ -517,7 +518,7 @@
                                   data-slider-step="1"
                                   value="1"
                                   data-slider-value="1"
-                                  data-slider-formater="children"/><br>
+                                  data-slider-formater="Filho"/><br>
                             </div>  
   
                                     </div>
@@ -531,21 +532,21 @@
                               </div>
   
                               <p class="note">
-                                  Expenses include stationery, uniform, textbooks, and even transportation costs.
+                                  As despesas incluem papelaria, uniforme, livros didáticos e até custos de transporte.
                               </p>
   
                               <p class="note">
-                                  We assume three individuals in the household are in school.
+                                 Assumimos que três indivíduos do agregado familiar estão na escola.
                               </p>
   
                 <p class="note">
-                  <strong>Median expenditure on education is between kSH1000 and KSH5000 per month per kid.</strong> There isn't a clear determination of costs per month for a family sending kids to school. It's likely on transportation, stationery, etc - but there are some definite costs.
+                  <strong>A despesa média com educação situa-se entre 1000MZN e 5000MZN por mês, por criança. Não há uma determinação clara dos custos mensais para uma família que envia os filhos à escola. Provavelmente é sobre transporte, papelaria, etc. - mas existem alguns custos definidos.
                 </p>
                 <p class="note">
-                  We limit the slider to KSH10000 because households are unlikely to be willing to pay more than that for kids. Public schools with fees and private schools can cost at KSH1000 and be upwards of KSH5000/month.
+                  Limitamos o controle deslizante a KSH10000 porque é improvável que as famílias estejam dispostas a pagar mais do que isso pelas crianças. Escolas públicas com propinas e escolas privadas podem custar 1000MZN e mais de 5000MZN/mês.
                 </p>
                 <p class="sources">
-                  <strong>Source:</strong> <a href="https://openafrica.net/dataset/cpi_kenya_2018">CPI January 2019, KNBS</a>
+                  <strong>Source:</strong> <a href="https://openafrica.net/dataset/cpi_kenya_2018">CPI January 2019, MOZ</a>
                   </ul>
                 </p>
               </div>
@@ -562,7 +563,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-communication-expenses">
               <h4 class="panel-title">
                 <span>
-                  7. Communications Cost<span id="communication-total" class="pull-right">KSH...</span>
+                  7. Custo de comunicações<span id="communication-total" class="pull-right">MZN...</span>
                 </span>
               </h4>
             </div>
@@ -574,8 +575,8 @@
                                   <div class="col-sm-9">
   
                                           <div class="form-group">
-                              <label for="communication-cost" class="lead question">What do you estimate each member of your domestic worker's household spends on <strong>communication</strong>?</label><br>
-                              <p>Estimate the monthly cost per person in the household:</p>
+                              <label for="communication-cost" class="lead question">Quanto você estima que cada membro da família da sua trabalhadora doméstica gaste em <strong>comunicacao</strong>?</label><br>
+                              <p>Estime o custo mensal por pessoa no domicílio::</p>
                               <input
                                   id="communication-cost"
                                   class="slider"
@@ -587,7 +588,7 @@
                                   data-slider-step="50"
                                   value="450"
                                   data-slider-value="450"
-                                  data-slider-formater="KSH"/>
+                                  data-slider-formater="MZN"/>
                             </div>
   
                                     </div>
@@ -600,7 +601,7 @@
                               </div>
   
                   <p class="note">
-                    Communications are necessary for staying in touch with families, friends, accessing news, and for emergencies. 
+                   As comunicações são necessárias para manter contato com familiares, amigos, acessar notícias e para emergências.
                   </p>
                 
               </div>
@@ -617,7 +618,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-recreation-expenses">
               <h4 class="panel-title">
                 <span>
-                  8. Recreation Cost<span id="recreation-total" class="pull-right">R...</span>
+                  8.  Custo de recreação<span id="recreation-total" class="pull-right">R...</span>
                 </span>
               </h4>
             </div>
@@ -629,8 +630,8 @@
                                   <div class="col-sm-9">
   
                             <div class="form-group">
-                              <label for="recreation-cost" class="lead question">How much do you estimate each household members spends on <strong>entertainment & recreation</strong>?</label><br>
-                              <p>Estimate a monthly recreation cost per person in the household:</p>
+                              <label for="recreation-cost" class="lead question">Quanto você estima que cada membro da família gaste em<strong>entretenimento e recreação ?</strong>?</label><br>
+                              <p>Estime um custo mensal de recreação por pessoa na família:</p>
                               <input
                                   id="recreation-cost"
                                   class="slider"
@@ -642,7 +643,7 @@
                                   data-slider-step="50"
                                   value="500"
                                   data-slider-value="500"
-                                  data-slider-formater="KSH"/>
+                                  data-slider-formater="MZN"/>
                             </div>
   
                                     </div>
@@ -655,7 +656,7 @@
                               </div>
   
                               <p class="note">
-                  It is always good to take time out from work and managing a household. Everyone needs a break!
+                  É sempre bom tirar uma folga do trabalho e cuidar da casa. Todo mundo precisa de uma pausa!
                 </p>
   
               </div>
@@ -672,7 +673,7 @@
             <div class="panel-heading" data-toggle="collapse" data-target="#panel-other-expenses">
               <h4 class="panel-title">
                 <span>
-                  9. Other Costs<span id="other-total" class="pull-right">R...</span>
+                  9.  Outros custos<span id="other-total" class="pull-right">R...</span>
                 </span>
               </h4>
             </div>
@@ -684,7 +685,7 @@
                                   <div class="col-sm-9">
   
                             <div class="form-group">
-                              <label for="other-cost" class="lead question">How much would you estimate are <strong>other miscellaneous costs</strong> incurred by your domestic worker's household?</label><br>
+                              <label for="other-cost" class="lead question">Quanto você estima que sejam outros custos diversos incorridos pela família do seu trabalhador doméstico?</label><br>
                               <input
                                   id="other-cost"
                                   class="slider"
@@ -696,7 +697,7 @@
                                   data-slider-step="50"
                                   value="350"
                                   data-slider-value="350"
-                                  data-slider-formater="KSH"/>
+                                  data-slider-formater="MZN"/>
                             </div>
   
                                     </div>
@@ -709,10 +710,10 @@
                               </div>
   
                 <p class="note">
-                    These include clothing, household items, personal care, and emergency expenses. Estimate other costs incurred per person in the household.
+                    Isso inclui roupas, utensílios domésticos, cuidados pessoais e despesas de emergência. Estime outros custos incorridos por pessoa no agregado familiar.
                 </p>
                 <p class="note">
-                  This should include for emergencies and procurement of durable goods, transportation of goods (gas cylinders, groceries, etc), implicit and explicit costs of running a household.
+                  Isto deve incluir emergências e aquisição de bens duráveis, transporte de bens (garrafas de gás, mantimentos, etc.), custos implícitos e explícitos de gestão doméstica.
                 </p>
   
             </div>
@@ -727,8 +728,8 @@
   
                   <div class="col-sm-8 col-sm-offset-2">
   
-                      <p>Using your input, we've calculated the minimum amount you should pay your domestic worker.</p>
-                      <p><a href="#results" onclick="javascript: pymChild.scrollParentToChildEl('row_scroll');"><button class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-up fa-lg"></i>Click here to see the results</button></a></p>
+                      <p>Com base nos seus dados, calculamos o valor mínimo que você deve pagar ao seu trabalhador doméstico..</p>
+                      <p><a href="#results" onclick="javascript: pymChild.scrollParentToChildEl('row_scroll');"><button class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-up fa-lg"></i>Clique aqui para ver os resultados</button></a></p>
   
                   </div>
   
