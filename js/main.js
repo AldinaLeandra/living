@@ -180,7 +180,7 @@ function validate_input(household_size, pay_rate, pay_amount) {
     }
     if (household_size && pay_rate && pay_amount) {
         // update user feedback text
-        $("#household-size-feedback").html(household_size + " people")
+        $("#household-size-feedback").html(household_size + " pessoa")
         return true
     }
     return false
