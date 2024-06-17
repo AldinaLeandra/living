@@ -43,7 +43,7 @@ github: https://github.com/CodeForAfrica/LivingWage.KE/
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Africa/Nairobi"
+timezone: "Africa/Mozambique"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
