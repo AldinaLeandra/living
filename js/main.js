@@ -1,9 +1,9 @@
 ---
 ---
 constants = {
-    workdays_per_week: 5,
+    workdays_per_week: 6,
     weeks_per_month: 4.33,
-    workdays_per_month: 5 * 4.33,
+    workdays_per_month: 6 * 4.33,
     days_per_month: 30,
     sanitation_threshold: 500,
     violence_threshold: 900,
@@ -14,9 +14,9 @@ constants = {
 
 function to_currency(val) {
     if (val != parseInt(val)) {
-        return "KSH" + commafy(val.toFixed(2));
+        return "MZN" + commafy(val.toFixed(2));
     } else {
-        return "KSH" + commafy(val);
+        return "MZN" + commafy(val);
     }
 }
 
