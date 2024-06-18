@@ -249,6 +249,7 @@ function update_output() {
         } else if ((output_percentage >= constants.output_almost) && (output_percentage < 100)) {
             output_statement = "Você está muito perto de pagar um salário justo, considerando o custo de vida e o tamanho de sua casa" +
                     "a casa da nossa empregada doméstica. Compartilhe seus resultados!";
+            
             highlight_output('label-warning');
         } else {
             output_statement = "Você está cobrindo as necessidades mínimas de seus trabalhadores domésticos. Compartilhe seus resultados!";
