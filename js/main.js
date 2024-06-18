@@ -54,15 +54,15 @@ function calculate_rent(household_size) {
 
     //Need comments on sanitation and violence to update with rent options.
     if (rent_cost > 0 && rent_cost < constants.sanitation_threshold) 
-        sanitation_comment = "Low functionality of bathrooms. High likelihood of communal bathroom. Low likeli" +
-                "hood of reliable trash collection."
+        sanitation_comment = "Baixa funcionalidade dos banheiros. Alta probabilidade de banheiro comum. Baixa probabilidade" +
+                "capuz de coleta de lixo confiável."
     else 
         sanitation_comment = "Personal bathroom facilities. Reliable trash collection"
 
     if (rent_cost > 0 && rent_cost < constants.violence_threshold) 
-        violence_comment = "High likelihood of experiencing gang violence and burglaries."
+        violence_comment = "Alta probabilidade de sofrer violência de gangues e roubos."
     else 
-        violence_comment = "Much lower likelihood of experiencing violence."
+        violence_comment = "Probabilidade muito menor de sofrer violência."
 
     $("#rent-total").html(to_currency(out));
 
@@ -235,23 +235,23 @@ function update_output() {
         output_percentage *= 100;
         output_percentage = Math.round(output_percentage);
 
-        var output_statement = "Try out the fair wage tool and see how your pay reflects living costs in South A" +
+        var output_statement = "Experimente a ferramenta de salário justo e veja como seu salário reflete o custo de vida no Sul da" +
                 "frica.";
         if ((output_percentage >= 0) && (output_percentage < constants.output_low)) {
-            output_statement = "You're paying too little given the living costs and the size of your domestic wo" +
-                    "rker's household. Take time to reassess how much you're paying by using our tool" +
+            output_statement = "Você está pagando muito pouco, considerando o custo de vida e o tamanho do seu problema doméstico." +
+                    "Reserve um tempo para reavaliar quanto você está pagando usando nossa ferramenta" +
                     ".";
             highlight_output('label-danger');
         } else if ((output_percentage >= 75) && (output_percentage < constants.output_almost)) {
-            output_statement = "You're nearly there! Take time to reassess the wage by using our tool or discuss" +
-                    "ing costs with your domestic worker.";
+            output_statement = "Você está quase lá! Reserve um tempo para reavaliar o salário usando nossa ferramenta ou discuta" +
+                    "custos com seu trabalhador doméstico.";
             highlight_output('label-warning');
         } else if ((output_percentage >= constants.output_almost) && (output_percentage < 100)) {
-            output_statement = "You're very close to paying a fair wage given the living costs and the size of y" +
-                    "our domestic worker's household. Share your results!";
+            output_statement = "Você está muito perto de pagar um salário justo, considerando o custo de vida e o tamanho de sua casa" +
+                    "a casa da nossa empregada doméstica. Compartilhe seus resultados!";
             highlight_output('label-warning');
         } else {
-            output_statement = "You're covering your domestic worker's Minimal Need. Share your results!";
+            output_statement = "Você está cobrindo as necessidades mínimas de seus trabalhadores domésticos. Compartilhe seus resultados!";
             highlight_output('label-success');
         }
 
@@ -261,7 +261,7 @@ function update_output() {
 
         $("#output-percentage").html(output_percentage + "%")
         $("#output-statement").html(output_statement);
-        change_twitter_text("I pay my domestic worker Ksh." + monthly_pay + " which is " + output_percentage + "% of their monthly need, how much do you pay?");
+        change_twitter_text("Eu pago MZN à minha empregada doméstica." + monthly_pay + " qual é " + output_percentage + "% de sua necessidade mensal, quanto você paga?");
         return true
     }
     return false
