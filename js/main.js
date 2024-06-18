@@ -241,10 +241,7 @@ function update_output() {
             output_statement = "Você está pagando muito pouco, considerando o custo de vida e o tamanho do seu problema doméstico." +
                     "Reserve um tempo para reavaliar quanto você está pagando usando nossa ferramenta" +
                     ".";
-            highlight_output('label-danger');
-        } else if ((output_percentage >= 75) && (output_percentage < constants.output_almost)) {
-            output_statement = "Você está quase lá! Reserve um tempo para reavaliar o salário usando nossa ferramenta ou discuta" +
-                    "custos com seu trabalhador doméstico.";
+            
             highlight_output('label-warning');
         } else if ((output_percentage >= constants.output_almost) && (output_percentage < 100)) {
             output_statement = "Você está muito perto de pagar um salário justo, considerando o custo de vida e o tamanho de sua casa" +
