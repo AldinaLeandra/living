@@ -227,30 +227,7 @@ function update_output() {
         else if (pay_rate == "month") {
             monthly_pay = pay_amount;
         }
-
-        // Update the overall pay-amount input box.
-        $("#pay-amount").val(monthly_pay);
         
-        var output_percentage = (monthly_pay / monthly_expenditure);
-        output_percentage *= 100;
-        output_percentage = Math.round(output_percentage);
-
-        var output_statement = "Experimente a ferramenta de salário justo e veja como seu salário reflete o custo de vida no Sul da" +
-                "frica.";
-        if ((output_percentage >= 0) && (output_percentage < constants.output_low)) {
-            output_statement = "Você está pagando muito pouco, considerando o custo de vida e o tamanho do seu problema doméstico." +
-                    "Reserve um tempo para reavaliar quanto você está pagando usando nossa ferramenta" +
-                    ".";
-            
-            highlight_output('label-warning');
-        } else if ((output_percentage >= constants.output_almost) && (output_percentage < 100)) {
-            output_statement = "Você está muito perto de pagar um salário justo, considerando o custo de vida e o tamanho de sua casa" +
-                    "a casa da nossa empregada doméstica. Compartilhe seus resultados!";
-            
-            highlight_output('label-warning');
-        } else {
-            output_statement = "Você está cobrindo as necessidades mínimas de seus trabalhadores domésticos. Compartilhe seus resultados!";
-            highlight_output('label-success');
         }
 
         // show results to the user
