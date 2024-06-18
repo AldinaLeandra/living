@@ -388,7 +388,7 @@ $(document)
             update_display('display-assumptions');
         })
 
-        function currency_formater(value,  symbol='KSH') {
+        function currency_formater(value,  symbol='MZN') {
             return symbol + ' ' + value;
         }
 
