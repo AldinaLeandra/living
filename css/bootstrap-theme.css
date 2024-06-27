@@ -97,17 +97,17 @@
 }
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #419641;
+  background-color: #3b873b;
   background-position: 0 -15px;
 }
 .btn-success:active,
 .btn-success.active {
-  background-color: #419641;
+  background-color: #3b873b;
   border-color: #3e8f3e;
 }
 .btn-success:disabled,
 .btn-success[disabled] {
-  background-color: #419641;
+  background-color: #3b873b;
   background-image: none;
 }
 .btn-info {
