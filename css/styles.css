@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider-selection {
-  background: #83bb26;
+  background: #489928;
 }
 
 .slider-handle {
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  background: #83bb26;
+  background: #489928;
 
   border-radius: 30px;
 
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background: #83bb26;
+  background: #489928;
 
   border: 0;
 }
